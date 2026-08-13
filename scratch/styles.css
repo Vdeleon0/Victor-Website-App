@@ -1,0 +1,150 @@
+/* ===== Base ===== */
+body{
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  color: #F7F5EF;
+  background-color: #0F2E1D;
+}
+
+h1, h2{
+  font-family: 'Oswald', sans-serif;
+  color: #F2C14E;
+  letter-spacing: 1px;
+}
+
+/* ===== Hero block (custom background color) ===== */
+.hero-block{
+  background-color: #143C24;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 2px,
+      transparent 2px,
+      transparent 80px
+    );
+  border-bottom: 4px dashed #F7F5EF;
+  padding: 90px 20px 60px;
+  text-align: center;
+}
+
+.kicker{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  color: #F2C14E;
+  font-weight: 600;
+}
+
+.hero-block h1{
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+
+.subtitle{
+  font-size: 1.2rem;
+  color: #DCE8DF;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.btn-ghost{
+  display: inline-block;
+  border: 2px solid #F2C14E;
+  color: #F2C14E;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-ghost:hover{
+  background-color: #F2C14E;
+  color: #143C24;
+}
+
+/* ===== Content wrapper ===== */
+.content-wrap{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.content-wrap section{
+  margin-bottom: 60px;
+}
+
+.content-wrap p{
+  line-height: 1.7;
+  color: #E5E9E6;
+}
+
+.feature-img{
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 3px solid #F2C14E;
+}
+
+.img-caption{
+  font-size: 0.9rem;
+  color: #B9C7BE;
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* ===== Ordered/unordered nested skill list ===== */
+.skill-list{
+  padding-left: 25px;
+}
+.skill-list > li{
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+.skill-list ul{
+  margin-top: 8px;
+  padding-left: 20px;
+  color: #C7D8CC;
+}
+.skill-list ul li{
+  margin-bottom: 4px;
+}
+
+/* ===== Video frame ===== */
+.video-frame{
+  border: 3px solid #F2C14E;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ===== On-page jump link ===== */
+.jump-back{
+  text-align: center;
+}
+.jump-back a{
+  color: #F2C14E;
+  text-decoration: none;
+  font-weight: 600;
+}
+.jump-back a:hover{
+  text-decoration: underline;
+}
+
+/* ===== Footer block ===== */
+.footer-block{
+  background-color: #0A2015;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 4px dashed #F7F5EF;
+}
+.footer-block a{
+  color: #F2C14E;
+  font-weight: 600;
+  text-decoration: none;
+}
+.footer-block a:hover{
+  text-decoration: underline;
+}

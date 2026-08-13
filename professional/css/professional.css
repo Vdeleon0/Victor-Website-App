@@ -1,0 +1,133 @@
+:root{
+  --navy: #0B1F3A;
+  --navy-deep: #071527;
+  --paper: #F7F5EF;
+  --copper: #C97A3D;
+  --copper-dark: #A85F28;
+  --ink: #17202A;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1, h2, h3, h4, .navbar-brand{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar{
+  background: var(--navy-deep);
+}
+.navbar-brand{
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.nav-link{
+  color: rgba(255,255,255,0.85) !important;
+}
+.nav-link:hover{
+  color: var(--copper) !important;
+}
+
+.hero{
+  min-height: 92vh;
+  padding-top: 80px;
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 65%);
+  color: #fff;
+}
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: var(--copper);
+  font-weight: 600;
+}
+.headshot{
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 4px solid var(--copper);
+}
+
+.btn-accent{
+  background: var(--copper);
+  border-color: var(--copper);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-accent:hover{
+  background: var(--copper-dark);
+  border-color: var(--copper-dark);
+  color: #fff;
+}
+
+.section-title{
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.section-title::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--copper);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+section.py-5 h2.section-title{
+  display: block;
+}
+
+.timeline-item{
+  border-left: 3px solid var(--copper);
+  padding: 0 0 2rem 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.timeline-item::before{
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 3px solid var(--copper);
+}
+.badge-year{
+  color: var(--copper-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.project-card{
+  border: none;
+  border-top: 4px solid var(--copper);
+  box-shadow: 0 4px 14px rgba(11,31,58,0.08);
+  transition: transform 0.2s ease;
+}
+.project-card:hover{
+  transform: translateY(-4px);
+}
+
+.skill-pill{
+  background: var(--navy);
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer-dark{
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.7);
+}
+
+a{
+  color: var(--copper-dark);
+}
